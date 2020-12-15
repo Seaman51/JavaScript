@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        button {
+            font-family: sans-serif;
+            display: block;
+            color: white;
+            font-size: 17px;
+            font-weight: 400;
+            text-align: justify;
+            text-decoration: none;
+            background-color: purple;
+            width: 132px;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            color: purple;
+            background-color: white;
+        }
+
+        p {
+            color: #010101;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .item p {
+            color: rebeccapurple;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: center;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Container {
+            width: 1280px;
+            margin: 0 auto;
+            background-color: White;
+            height: 100%;
+            border-right: 4px solid black;
+            border-left: 4px solid black;
+            height: 2000px;
+        }
+
+        .summ {
+            font-family: sans-serif;
+            color: #010101;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            width: 300px;
+            height: 100px
+        }
+
+        .Recycle {
+
+            margin-left: 0 auto;
+        }
+
+        .Recycle h1 {
+            padding-left: 200px;
+        }
+
+        #recycle {
+            width: auto;
+            height: auto;
+            border: 2px solid red;
+            margin: 5%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #recycle .item_button {
+            display: none;
+        }
+
+        .del_button {
+         display: none;
+        }
+
+        #recycle .del_button {
+            display: block;
+        }
+
+        .Items {
+            width: auto;
+            display: flex;
+            padding: 5%;
+            height: 454px;
+            justify-content: space-between;
+            background-repeat: no-repeat;
+        }
+
+        #recycleButton {
+            float: right;
+        }
+
+        h1 {
+            font-family: sans-serif;
+            color: #000000;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49.542px;
+            text-align: center;
+        }
+
+        .infoblock {
+            float: right;
+        }
+
+    </style>
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div id='container' class='Container'>
+        <h1>Каталог товаров</h1>
+        <div class='Items'>
+            <div class='item' id='01' onclick>
+                <img src="./img/goods.png" alt="Товар"><br>
+                <p class='price' id='1'>1000</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='02' onclick>
+                <img src="./img/goods.png" alt="Товар"><br>
+                <p class='price' id='2'>2000</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='03' onclick>
+                <img src="./img/goods.png" alt="Товар"><br>
+                <p class='price' id='3'>3000</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='04' onclick>
+                <img src="./img/goods.png" alt="Товар"><br>
+                <p class='price' id='4'>4000</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+            <div class='item' id='05' onclick>
+                <img src="./img/goods.png" alt="Товар"><br>
+                <p class='price' id='5'>5000</p>
+                <button class='item_button'>Купить</button>
+                <button class='del_button'>Удалить</button>
+            </div>
+        </div>
+
+        <div class='RecycleContentFields'>
+            <h1>Корзина</h1>
+            <div class='recycleContent'>
+                <address></address>
+            </div>
+            <div class='infoblock'>
+                <p class='summ'>Общая сумма</p>
+                <button id='clear'>Очистить корзину</button>
+
+            </div><br>
+            <div id='recycle' onclick>
+                <div id='infotext'>Ваша корзина пуста</div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
